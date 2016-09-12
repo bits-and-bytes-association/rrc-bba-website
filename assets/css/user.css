@@ -21,18 +21,18 @@ header{
 .navbar-default .navbar-nav > li > a{
   color:#222;
   font-weight:bold;
-  background-color:rgba(255,255,255,0.3);
+  background-color:rgba(255,255,255,0.8);
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
   color:#fff;
-  background-color:rgba(0,0,0,0.5);
+  background-color:rgba(0,0,0,0.9);
   font-weight:bold;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
   color:#fff;
-  background-color:rgba(0,0,0,0.6);
+  background-color:rgba(0,0,0,0.9);
   font-weight:bold;
 }
 
