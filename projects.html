@@ -1,50 +1,33 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBA</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/material-icons.css">
-    <link rel="stylesheet" href="assets/css/user.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="material-icons">android</i><span class="text-title">Bits &amp; Bytes Association </span></a>
-                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BBA - Bits and Bytes Association</title>
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/material-icons.css">
+        <link rel="stylesheet" href="assets/css/user.css">
+    </head>
+    <body>
+        <div w3-include-html="./header.html"></div>
+        <div w3-include-html="./nav.html"></div> 
+        <div class="container post">
+            <div class="row">
+                <div class="col-md-4 post-title">
+                    <h3>Projects</h3>
                 </div>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active" role="presentation"><a href="index.html">Home </a></li>
-                        <li role="presentation"><a href="http://blogs.rrc.ca/informationsystems/2015/08/new-ace-technology-corner/">ACE </a></li>
-                        <li role="presentation"><a href="#">Contact us</a></li>
-                    </ul>
+                <div class="col-md-8 col-md-offset-0 post-body">
                 </div>
-            </div>
-        </nav>
-    </header>
-    <ul class="nav nav-pills categories">
-        <li><a href="events.html">Events </a></li>
-        <li><a href="#">Projects </a></li>
-        <li><a href="networking.html">Network </a></li>
-        <li><a href="upcoming.html">Upcoming </a></li>
-        <li><a href="members.html">Members </a></li>
-    </ul>
-    <div class="container post">
-        <div class="row">
-            <div class="col-md-6 post-title">
-                <h1>Bits &amp; Bytes: </h1>
-                <h1>Projects</h1>
-            </div>
-            <div class="col-md-6 col-md-offset-0 post-body">
             </div>
         </div>
-    </div>
-    <footer>
-        <h5>BBA © 2016</h5></footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
+        <div w3-include-html="./footer.html"></div>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script>
+          w3IncludeHTML();
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </body>
 
 </html>

@@ -1,4 +1,5 @@
 # RRC-BBA-Website
-Where it all begins
-This will house the BBA webpage and all the files to make it happen
-We can allow multiple contributors to work together and explore their ideas
+The main webpage for the Bits and Bytes Association in Winnipeg Manitoba
+
+If you would like to contribute please follow the steps below:
+https://guides.github.com/activities/contributing-to-open-source/#contributing
