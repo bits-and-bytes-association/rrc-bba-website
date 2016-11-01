@@ -12,36 +12,34 @@
     </head>
     <body>
         <div w3-include-html="./header.html"></div>
-        <div w3-include-html="./nav.html"></div> 
-    <div class="container post">
-        <div class="row">
-            <div class="col-md-4 post-title">
-                <h3>Contributors</h3>
-            </div>
-            <div class="col-md-8 col-md-offset-0 post-body">
-                <div class="list-group" id="contributors">
-                    <script>
-                        $.get("https://api.github.com/repos/dj21d/rrc-bba-website/contributors", function(data) {
-                            $.each(data, function(index, contributor){
-                                $.get("https://api.github.com/users/" + contributor.login, function(userInfo){
-                                    var userFullName = userInfo.name || userInfo.login
-                                    $("#contributors").append("<a class='list-group-item' href='http://www.github.com/" + userInfo.login + "'>" + userFullName + (userInfo.login=="jwarren40"?" - Site Creator":"") + "</a>")
+        <div class="container post">
+            <div class="row">
+                <div class="col-md-4 post-title">
+                    <h3>Contributors</h3>
+                </div>
+                <div class="col-md-8 col-md-offset-0 post-body">
+                    <div class="list-group" id="contributors">
+                        <script>
+                            $.get("https://api.github.com/repos/dj21d/rrc-bba-website/contributors", function(data) {
+                                $.each(data, function(index, contributor){
+                                    $.get("https://api.github.com/users/" + contributor.login, function(userInfo){
+                                        var userFullName = userInfo.name || userInfo.login
+                                        $("#contributors").append("<a class='list-group-item' href='http://www.github.com/" + userInfo.login + "'>" + userFullName + (userInfo.login=="jwarren40"?" - Site Creator":"") + "</a>")
+                                    });
                                 });
                             });
-                        });
-                    </script>
+                        </script>
+                    </div>
+                    <p>Want to help with our website? Go to our github <a href="https://github.com/dj21d/RRC-BBA-Website">github.com/dj21d/RRC-BBA-Website</a></p>
                 </div>
-                <p>Want to help with our website? Go to our github <a href="https://github.com/dj21d/RRC-BBA-Website">github.com/dj21d/RRC-BBA-Website</a></p>
             </div>
         </div>
-    </div>
-    <div w3-include-html="./footer.html"></div>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <script>
-      w3IncludeHTML();
-    </script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+        <div w3-include-html="./footer.html"></div>
+        <script src="http://www.w3schools.com/lib/w3data.js"></script>
+        <script>
+          w3IncludeHTML();
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
