@@ -11,20 +11,36 @@
         <link rel="stylesheet" href="assets/css/user.css">
     </head>
     <body>
-        <div w3-include-html="./header.html"></div>
-        <div w3-include-html="./nav.html"></div> 
+        <div w3-include-html="./header.html"></div> 
         <div class="container post">
             <div class="row">
                 <div class="col-md-4 post-title">
                     <h3>Projects</h3>                    
                 </div>
                 <div class="col-md-8 col-md-offset-0 post-body">
-                    <div class="row">
+                     <div class="row">
                         <div class="col-sm-12">
-                            <a href="project_solar_panel.html" class="panel panel-default project-panel">
+                            <div class="panel panel-default project-panel" onclick="goto('project_bba_website.html')">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <img style="padding: 5px;" class="img-responsive" src="assets/img/solar_panel.png"></img>
+                                        <img style="padding: 5px;" class="img-responsive" src="assets/img/bba_logo.png"></img>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h3>BBA Website</h3>
+                                        <p>
+                                            Help maintain this very website!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="panel panel-default project-panel" onclick="goto('project_solar_panel.html')">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <img style="padding: 5px;" class="img-responsive" src="assets/img/sun.png"></img>
                                     </div>
                                     <div class="col-xs-9">
                                         <h3>Solar Panel Project</h3>
@@ -33,12 +49,12 @@
                                         </p>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="panel panel-default project-panel">
+                            <div class="panel panel-default project-panel"onclick="goto('project_online_course_testing.html')">
                                 <div class="row">
                                     <div class="col-xs-3">                  
                                         <img style="padding: 5px;" class="img-responsive" src="assets/img/e_learning.jpg"></img>
@@ -53,6 +69,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="panel panel-default project-panel" onclick="goto('project_create_your_own.html')">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <img style="padding: 5px;" class="img-responsive" src="assets/img/idea.png"></img>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h3>Start Your Own Business</h3>
+                                        <p>
+                                            Have a business idea? RRC wants to encourage entrepenuers!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,6 +93,9 @@
         <script src="http://www.w3schools.com/lib/w3data.js"></script>
         <script>
           w3IncludeHTML();
+          function goto(link) {
+            document.location.href = link;
+          }
         </script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
