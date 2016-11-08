@@ -20,7 +20,7 @@
                 <div class="col-md-8 col-md-offset-0 post-body">
                     <div class="list-group" id="contributors">
                         <script>
-                            $.get("https://api.github.com/repos/dj21d/rrc-bba-website/contributors", function(data) {
+                            $.get("https://api.github.com/repos/bitsandbytesassociation/rrc-bba-website/contributors", function(data) {
                                 $.each(data, function(index, contributor){
                                     $.get("https://api.github.com/users/" + contributor.login, function(userInfo){
                                         var userFullName = userInfo.name || userInfo.login
