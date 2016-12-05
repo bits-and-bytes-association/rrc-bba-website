@@ -1,0 +1,15 @@
+.project-panel {
+	-webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+  	background-color:#FAF7F7;
+}
+
+.project-panel:hover {
+    background:#EBEBEB;
+    transition: .2s;
+}
+
+.project-panel:active {
+	background:#E1DFDF;
+}
