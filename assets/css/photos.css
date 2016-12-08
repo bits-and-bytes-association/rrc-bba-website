@@ -1,3 +1,7 @@
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -28,6 +32,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
+  left: 0;
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -54,8 +59,8 @@
 /* The dots/bullets/indicators */
 .dot {
   cursor:pointer;
-  height: 13px;
-  width: 13px;
+  height: 6px;
+  width: 6px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
