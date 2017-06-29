@@ -1,0 +1,82 @@
+documentSummary.txt - current as of July 2017
+	A summary of documents in the BBA Website folder and how they are used.
+
+/assets
+	/bootstrap
+		/css
+			bootstrap-override.css
+			bootstrap.min.css - liscensing information as well as an import statement
+		/js
+			bootstrap.min.js
+
+	/css
+		photos.css - css for slideshow
+		user.css - contains styles for navigation, posts, and calendar
+
+	/fonts
+
+	/img - also contains logos and decorative images
+		/carousel - images for slideshow
+		/headshots - headshots of past/present exec teams	
+
+	/js
+		headerscript.js
+		jquery.min.js
+		slides.js
+
+All pages get favicon from favicon.ico
+All pages use a JavaScript function to include header.html and footer.html
+	This cuts down on reuse of code and makes maintenance easier!
+
+
+
+contributors.html
+	Gets styles from user.css
+	Script will get names of contributors from GitHub.com and put them on this page
+
+
+currentboard.html
+	for each member of the current board:
+		Header Format: title - firstname lastname
+		followed by their bio - this will be submitted by the board member themselves
+	each board member is wrapped in a div with each image and bio wrapped in their own individual divs
+
+events.html
+	embedded Google calendar
+
+footer.html
+
+header.html
+
+history.html
+	div with a brief bio of BBA
+
+index.html
+	contains JavaScript slideshow code and photos
+	contains link to our slack channel
+	contains embedded Google calendar information
+
+pastexecs.html
+	simple list of past execs
+
+project_bba_website.html
+	linked from projects.html
+
+project_create_your_own.html
+	linked from projects.html
+
+project_online_course_testing.html
+	linked from projects.html
+
+project_solar_panel.html
+	linked from projects.html
+
+projects.html
+	list of projects that the BBA is "currently" involved in
+		needs to be updated
+
+Don't worry about these files unless you're 100% certain you know what you're doing.
+   README.md
+   .gitignore
+   CNAME
+   favicon.ico - icon that shows up on your browser tab when on the website
