@@ -1,0 +1,11 @@
+.socialnavigation ul {
+	list-style: none;
+}
+
+.socialnavigation ul li {
+	display: inline-block;
+}
+
+.socialnavigation {
+	margin: auto;
+}
