@@ -12,6 +12,7 @@ documentSummary.txt - current as of July 2017
 	/css
 		photos.css - css for slideshow
 		user.css - contains styles for navigation, posts, and calendar
+		socialnavigation.css - used for social media icons as seen in footer.html and ourstory.html
 
 	/fonts
 
@@ -23,6 +24,10 @@ documentSummary.txt - current as of July 2017
 		headerscript.js
 		jquery.min.js
 		slides.js
+
+	/icons
+		favicon.ico - icon that shows up on your browser tab when on the website
+		also contains social media icons
 
 All pages get favicon from favicon.ico
 All pages use a JavaScript function to include header.html and footer.html
@@ -79,4 +84,3 @@ Don't worry about these files unless you're 100% certain you know what you're do
    README.md
    .gitignore
    CNAME
-   favicon.ico - icon that shows up on your browser tab when on the website
