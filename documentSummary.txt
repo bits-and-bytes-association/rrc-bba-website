@@ -76,6 +76,10 @@ project_online_course_testing.html
 project_solar_panel.html
 	linked from projects.html
 
+new_student_orientation.html
+	linked from projects.html
+		describes tasks associated with volunteering for new student orientations	
+
 projects.html
 	list of projects that the BBA is "currently" involved in
 		needs to be updated
