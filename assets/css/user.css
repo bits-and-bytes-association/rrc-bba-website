@@ -99,3 +99,8 @@ div.container.post{
 .board_member {
   height:350px;
 }
+
+/**Used for the task list in new_student_orientation.html **/
+.task {
+  font-weight: bold;
+}
