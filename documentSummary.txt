@@ -26,14 +26,15 @@ documentSummary.txt - current as of August 2017
 		slides.js
 
 	/icons
-		favicon.ico - icon that shows up on your browser tab when on the website
-		also contains social media icons
+		contains social media icons
 
 All pages get favicon from favicon.ico
 All pages use a JavaScript function to include header.html and footer.html
 	This cuts down on reuse of code and makes maintenance easier!
 
 
+favicon.ico - icon that shows up on your browser tab when on the website
+	-this needs to be in the root folder
 
 contributors.html
 	Gets styles from user.css
