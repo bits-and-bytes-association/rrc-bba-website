@@ -9,10 +9,34 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-override.css">
         <link rel="stylesheet" href="assets/fonts/material-icons.css">
         <link rel="stylesheet" href="assets/css/user.css">
+        <link rel="stylesheet" href="assets/css/socialnavigation.css">
     </head>
     <body>
         <div w3-include-html="./header.html"></div> 
         <div class="container post">
+        <div class="row">
+            <div class="col-md-4 post-title">
+                    <h3>Volunteer</h3>                    
+                </div>
+                <div class="col-md-8 col-md-offset-0 post-body">
+                     <div class="row">
+                        <div class="col-sm-12">
+                            <div class="panel panel-default project-panel" onclick="goto('new_student_orientation.html')">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <img style="padding: 5px;" class="img-responsive" src="assets/img/students.png"></img>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h3>New Student Orientation</h3>
+                                        <p>
+                                            Welcome new students and get them acquainted with the school.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>           
             <div class="row">
                 <div class="col-md-4 post-title">
                     <h3>Projects</h3>                    
@@ -35,7 +59,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+            <div class="row">
                         <div class="col-sm-12">
                             <div class="panel panel-default project-panel" onclick="goto('project_solar_panel.html')">
                                 <div class="row">
@@ -89,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div w3-include-html="./footer.html"></div>
+        <div w3-include-html="./footer.html">
         <script src="http://www.w3schools.com/lib/w3data.js"></script>
         <script>
           w3IncludeHTML();
@@ -99,5 +123,6 @@
         </script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        </div>
     </body>
 </html>

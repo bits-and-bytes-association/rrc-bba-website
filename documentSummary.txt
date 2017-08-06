@@ -1,4 +1,4 @@
-documentSummary.txt - current as of July 2017
+documentSummary.txt - current as of August 2017
 	A summary of documents in the BBA Website folder and how they are used.
 
 /assets
@@ -26,14 +26,15 @@ documentSummary.txt - current as of July 2017
 		slides.js
 
 	/icons
-		favicon.ico - icon that shows up on your browser tab when on the website
-		also contains social media icons
+		contains social media icons
 
 All pages get favicon from favicon.ico
 All pages use a JavaScript function to include header.html and footer.html
 	This cuts down on reuse of code and makes maintenance easier!
 
 
+favicon.ico - icon that shows up on your browser tab when on the website
+	-this needs to be in the root folder
 
 contributors.html
 	Gets styles from user.css
@@ -50,16 +51,17 @@ events.html
 	embedded Google calendar
 
 footer.html
-
+	all html documents use this page for their footer
 header.html
+	all html documents use this page for their footer
 
-history.html
-	div with a brief bio of BBA
+ourstory.html -> formerly history.html
+	Contains our mission statement, bio and contact information
 
 index.html
-	contains JavaScript slideshow code and photos
 	contains link to our slack channel
 	contains embedded Google calendar information
+	main content is an image right now - we need some content
 
 pastexecs.html
 	simple list of past execs
@@ -75,6 +77,10 @@ project_online_course_testing.html
 
 project_solar_panel.html
 	linked from projects.html
+
+new_student_orientation.html
+	linked from projects.html
+		describes tasks associated with volunteering for new student orientations	
 
 projects.html
 	list of projects that the BBA is "currently" involved in
