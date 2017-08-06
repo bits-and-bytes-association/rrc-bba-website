@@ -1,4 +1,4 @@
-documentSummary.txt - current as of July 2017
+documentSummary.txt - current as of August 2017
 	A summary of documents in the BBA Website folder and how they are used.
 
 /assets
@@ -50,16 +50,17 @@ events.html
 	embedded Google calendar
 
 footer.html
-
+	all html documents use this page for their footer
 header.html
+	all html documents use this page for their footer
 
-history.html
-	div with a brief bio of BBA
+ourstory.html -> formerly history.html
+	Contains our mission statement, bio and contact information
 
 index.html
-	contains JavaScript slideshow code and photos
 	contains link to our slack channel
 	contains embedded Google calendar information
+	main content is an image right now - we need some content
 
 pastexecs.html
 	simple list of past execs
