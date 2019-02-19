@@ -13,3 +13,7 @@
 .project-panel:active {
 	background:#E1DFDF;
 }
+.row_board_member h3{
+    font-size: 10px;
+    margin-bottom: 20px;
+}
