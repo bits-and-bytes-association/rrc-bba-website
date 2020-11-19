@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BBA - Bits and Bytes Association</title>
+        <link rel="icon" type="image/png" href="../favicon.ico">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-override.css">
+        <link rel="stylesheet" href="assets/fonts/material-icons.css">
+        <link rel="stylesheet" href="assets/css/user.css">
+        <link rel="stylesheet" href="assets/css/socialnavigation.css">
+    </head>
+    <body>
+        <div w3-include-html="header.html"></div>
+          <div class="container post">
+            <h3>TL:DR</h3>
+              <div>
+                <p>This is the short version of this document. When I learned how to use github initially, I only used a handful of commands. Git Pull/Clone to get the repo I wanted
+                to work on. "Git checkout -b" to create a place I can safely make changes, and then after I was done, in this order, "Git Add .", "Git Commit -m 'message'", "git push origin branch-name"
+                I would then follow the link provided in my console output to open a pull request to have someone approve the changes. </p>
+                <ul>
+                  <li>to create a git repo - "git init"</li>
+                  <li>Create a new branch - "git checkout -b [branch-name]</li>
+                  <li>Pull the lastest verison on the origin - "git pull"
+                </ul>
+                <p> Saving changes
+                <ul>
+                  <li>Stage Changes - "git add ."</li>
+                  <li>Commit Changes - "git commit -m 'message-of-what-changed'"
+                  <li>Save the changes on github - "git push origin 'branch-name-changes-are-on'"
+                </ul>
+              </div>
+              <h3>So, you want to use GitHub</h3>
+              <div>
+                <p>Have you ever used CTRL-Z to undo a change you’ve made in a file? Have you ever wanted to undo a change you made a while ago? Thats exactly what
+                git is for! Well, one of the things. Modern programming using version control for a number of reasons</p>
+                <ul>
+                  <li>Work on new projects features while at the same time patching bugs found in older version of the code.</li>
+                  <li>Collaborate with someone on a projects without overwriting each other’s work.</li>
+                  <li>Work with distributed teams of coders from around the world to develop open-source applications.</li>
+                </ul>
+                <br>
+                <h5>A Quick Note</h5>
+                <p> There are a number of git and github UI's out there, such as GitKracken, or just the GitHub Desktop app. However, this runbook will focus on
+                using git via the command line. But we wanted to give you a heads up that those other tools are out there as well</p>
+              </div>
+              <div>
+                <h3>So, what is git?</h3>
+                <p>Git is a free and open source distributed version control system. Git helps us keep track of the changes to our source code over the lifespan of a project.
+                Just in case I don't make much sense, here are a few videos on the subject</p>
+                <ul>
+                  <a href="https://youtu.be/8oRjP8yj2Wo?list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH"><li>Git Basics</li></a>
+                  <a href='https://www.youtube.com/watch?v=uhtzxPU7Bz0&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH'><li>What is Git?</li></a>
+                  <a href="https://www.youtube.com/watch?v=wmnSyrRBKTw&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH"><li>Getting Going</li></a>
+                  <a href="https://www.youtube.com/watch?v=7w5Z7LmyLgI&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH"><li>Quick Wins with Git</li></a>
+                </ul>
+                <p> And some additional resources</p>
+                <ul>
+                  <li><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#awesm=~oj8fkvhuiDnYWz">Github for Beginners: Dont Get Scared, Get Started</a></li>
+                  <li><a href="http://rogerdudler.github.com/git-guide/">Github - The Simple Guide</a></li>
+                  <li><a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf">Git Cheatsheet</a></li>
+                  <li><a href="http://git-scm.com/book">Pro Git Ebook</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3> git pull "termenology"</h3>
+                <p> I told myself I would only make that joke once in this guide - lets see if I hold to that.
+                Before we get too far into this, we need to go over a few basic terms, and what they mean</p>
+                <ul>
+                  <li>Respository - A collection of files and directories you are monitoring for changes using a version control tool. Sometimes shortened to repo.</li>
+                  <li>Hash - A string of characters that acts like a digital fingerprint for a file or portion of a file. The type of hash used by git is the SHA1 cryptographic hash.</li>
+                  <li>Graph - A diagram of nodes connected by lines called edges. </li>
+                  <li>DAG - Directed Acyclic Graph. A graph were the edges are arrows (directed) and no matter which arrow you follow you can never travel in a circle (acyclic).</li>
+                  <li>CLI - Command Line Interface. The “Terminal” or “Shell” of your operating system. Git is a CLI tool but there are also graphical (GUI) interfaces.</li>
+                </ul>
+
+                <h3>Initializing a Local Respository</h3>
+                <br>
+                <p>In order to get started, you need to be working in a Respository that has been "initialized". In order to initialize a respository, just type</p>
+                <p>git init</p>
+                <br>
+                <p>after which, you can check the status of the repo for changes, or additions, at any point with
+                <p>git status<p>
+                <br>
+                <p>and you can compare the differences between the current files and the last commit with</p>
+                <p>git diff</p>
+
+                <h3>Adding a remote origin</h3>
+                <p>When you think of Git, you probably think of Github - a site to store your respository so you can pull them down on
+                different machines to work on them (also, as a secure backup - trust me, you dont want a hard drive failure ruining your final project)
+                In order to set up your local repository with a remote one (AKA, on GitHub), you then need to do the following</p>
+                <p>To save your git repository to your GitHub account, create a new repository by way of the “create a new repo” button in the top corner of the GitHub website.
+                IMPORTANT: Be sure not to click the checkbox to add an initial README file.</p>
+                <p>Let’s say you’ve created a new repo called “rails_project” and you’ve already initialized this project’s git repository.
+                From the command line (within your project folder) add Github as a remote:</p>
+                <p>git remote add origin git@github.com:[username]/rails_project.git</p>
+                <p> note - This should be all one line with [username] replaced by your actual username.</p>
+                <br>
+                <p>When ever you want to push the latest state of your repo to Github:</p>
+                <p>git push origin [branch-name]</p>
+                <p>where the branch name is the branch that you have changes on</p>
+                <br>
+                <p>If you create a new repo on github, it will also show you the steps of how to connect that with an initialized repository on your
+                local machine<p>
+              </div>
+
+              <div>
+              <h3>Let's Branch off from that topic for a second</h3>
+              <p>Branches in git give you a safe space to work on new features. The main branch of your repository is called the master branch, although that is being updated to main</p>
+              <br>
+              <p>Commits made in other branches can be merged into the master/main at any time. Branches can also be abandoned or even deleted at any time leaving the master unchanged.
+              </div>
+              <p>What this means is that when developing a new feature, you can create a branch to work on. If the feature goes sideways in a big way, you can just abandon that branch and
+              go back to your last stable main branch to start over without having to untangle whatever changes you may have made on that branch.</p>
+              <h4>Let's go over those commands</h4>
+              <ul>
+                <li>To create a new branch: git checkout -b new-branch-name</li>
+                <li>To switch branch: git checkout name-of-branch</li>
+                <li>To merge change into the active branch: git merge branch-to-merge</li>
+                <li>To delete a branch: git branch -d branch-to-delete</li>
+              </ul>
+              <p>If you have the repo already set up to work with a remote repository, I tend to "git push origin [branch-name]" and in the console output after that command
+              there will be a link to open a Pull Request. From the <a href="https://guides.github.com/activities/hello-world/">Github Documentation</a> "Pull Requests are the heart of collaboration on GitHub.
+              When you open a pull request, you’re proposing your changes and requesting that someone review and pull in your contribution and merge them into their branch.
+              Pull requests show diffs, or differences, of the content from both branches. The changes, additions, and subtractions are shown in green and red."
+              I use that pull request as another chance to go over what I have changed and catch any last minute errors</p>
+              </div>
+            </div>
+            <h1>A Giant Thank you!</h1>
+            <p>Special thanks to Kyle Geske. This runbook drew heavily from his "GitHub Basics" course notes from Full Stack Web Dev, and
+            we are grateful that he let us use it as a
+
+
+
+        <div w3-include-html="footer.html"></div>
+        <script src="https://www.w3schools.com/lib/w3data.js"></script>
+        <script>
+          w3IncludeHTML();
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html
