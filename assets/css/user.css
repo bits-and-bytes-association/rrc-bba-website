@@ -14,9 +14,15 @@
   height: 35px;
   margin-top: -5px;
 }
+@media(max-width:419px){
+  .navbar-brand img{
+    width: 250px;
+    margin-top: -10px;
+  }
+}
 @media(max-width: 767px){
   .navbar-brand img{
-    display: none;
+    margin-top: -10px;
   }
   .nav.navbar-nav .navbar-logo{
     display: block;
