@@ -1,23 +1,34 @@
-.navbar-default .navbar-nav > li > a{
-  color:#222;
-  font-weight:bold;
-  background-color:rgba(255,255,255,0.8);
+/*Navigation*/
+.navbar-brand img{
+  width: 300px;
 }
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-  color:#fff;
-  background-color:rgba(0,0,0,0.9);
-  font-weight:bold;
+.nav.navbar-nav .navbar-logo{
+    display: none;
+  }
+.nav.navbar-nav li a{
+  margin-top: 15px;
+  font-weight: bold;
 }
-
-.navbar-toggle{
-  background-color:#fff !important;
-  margin-top:20px;
+#dc-logo{
+  width:110px; 
+  height: 35px;
+  margin-top: -5px;
 }
-
-#navcol-1{
-  padding:10px;
+@media(max-width: 767px){
+  .navbar-brand img{
+    display: none;
+  }
+  .nav.navbar-nav .navbar-logo{
+    display: block;
+  }
+  .nav.navbar-nav .navbar-logo a img{
+    width: 200px;
+  }
+  #dc-logo{
+    margin-top: 0;
+  }
 }
+/*Navigation End*/
 
 .categories{
   text-align:center !important;
