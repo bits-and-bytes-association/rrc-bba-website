@@ -1,46 +1,50 @@
 <header>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="nav-header">
-          <a href="./" class="navbar-brand"><img width="300" class="bba-header-logo" src="./assets/img/bba-logo.png" /></a>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="/assets/img/bba-logo.png" alt="bba logo"></a>
         </div>
-        <ul class="nav navbar-nav categories">
-          <li><a href="events.html">Events</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              About Us <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li style="width:100%"><a href="ourstory.html">Our Story</a></li>
-              <li style="width:100%"><a href="currentboard.html">Current Board</a></li>
-              <li style="width:100%"><a href="pastexecs.html">Past Executives</a></li>
-            </ul>
-          </li>
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              Runbooks <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li style="width:100%"><a href="runbook_how_to.html">How to add a runbook!</a></li>
-              <li style="width:100%"><a href="runbook_how_to_github.html">GitHub Basics</a></li>
-              <li style="width:100%"><a href="time_management.html">Time Management</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="collapse navbar-collapse" id="navcol-1">
-          <ul class="nav navbar-nav navbar-right">
-              <li role="presentation"><a target="_blank" href="https://www.rrc.ca/informationsystems">ACE @ RRC </a></li>
-              <li role="presentation"><a href="contact_us.html">Contact us</a></li>
-              <li role="presentation"><a target="_blank" href="https://discord.gg/RXySZQE"><img class="img-rounded" src="assets/img/discord-logo.png" style="width:110px; height: 35px;"/></a></li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav" id="nav-links">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="https://www.rrc.ca/informationsystems">ACE@RRC</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li role="presentation"><a target="_blank" href="https://discord.gg/RXySZQE"><img id="dc-logo" class="img-rounded" src="/assets/img/discord-logo.png"/></a></li>
           </ul>
-        </div>
-      </div>
-    </nav>
+          <ul class="nav navbar-nav">
+            <!--About us-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="ourstory.html">Our Story</a></li>
+                <li><a href="currentboard.html">Current Board</a></li>
+                <li><a href="pastexecs.html">Past Executives</a></li>
+                <li><a></a></li>
+              </ul>
+            </li>
+            <!--Run books-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Runbooks<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="runbook_how_to.html">How to add a runbook!</a></li>
+                <li><a href="runbook_how_to_github.html">Github Basics</a></li>
+                <li><a href="time_management.html">Time Management</a></li>
+                <li><a></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </div>
+  </nav>
 </header>
