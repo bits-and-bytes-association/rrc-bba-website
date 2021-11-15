@@ -1,4 +1,7 @@
 /*Navigation*/
+#nav-links{
+  margin: 0 110px;
+}
 .navbar-brand img{
   width: 300px;
 }
@@ -21,6 +24,9 @@
   }
 }
 @media(max-width: 767px){
+  #nav-links{
+    margin: 0;
+  }
   .navbar-brand img{
     margin-top: -10px;
   }
