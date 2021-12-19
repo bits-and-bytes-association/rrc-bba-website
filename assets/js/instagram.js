@@ -1,4 +1,4 @@
-fetch('https://ig.instant-tokens.com/users/a894c61e-1c13-4978-94cd-f9fe73fbb5d2/instagram/17841404340334440/token?userSecret=52x5h0jrs231k4gr6f08ds')
+fetch('https://ig.instant-tokens.com/users/a894c61e-1c13-4978-94cd-f9fe73fbb5d2/instagram/17841404340334440/token?userSecret=kvrsgc5vvw72p4i6bky0r')
   .then(resp => resp.json())
   .then(data => {
         var feed = new Instafeed({
