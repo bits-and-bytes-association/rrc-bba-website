@@ -186,6 +186,7 @@ div.container.post{
   text-align: center;
 }
 
+/* Our Story Carousel */
 .col_title{
   font-size: 24px;
   font-weight: bold;
@@ -210,6 +211,12 @@ div.container.post{
 .col2_link li{
   padding-left: 0px;
 }
+
+/*.carousel-control,*/ .carousel-indicators {
+    filter: invert(100%);
+}
+
+/* Our Story Carousel End */
 
 .socialnavigation{
   display: flex;
