@@ -185,3 +185,41 @@ div.container.post{
 .insta-link{
   text-align: center;
 }
+
+.col_title{
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.col2_content{
+  display: flex;
+  font-size: 18px;
+  margin: 20px 40px;
+  padding-left: 20px;
+  width: 850px;
+}
+
+.col2_link{
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 0px;
+}
+
+.col2_link li{
+  padding-left: 0px;
+}
+
+.socialnavigation{
+  display: flex;
+  padding-top: 10px;
+}
+
+.socialnavigation ul {
+  margin-left: -20px;
+}
+
+.socialnavigation ul li{
+  margin-right: 2px;
+}
