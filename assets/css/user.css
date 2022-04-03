@@ -231,12 +231,3 @@ div.container.post {
 }
 
 /* Our Story Carousel End */
-
-.socialnavigation {
-  float: left;
-  padding-left: -70px;
-}
-
-.socialnavigation ul {
-  margin: 10px 2px 0px -15px;
-}
